@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+
+    tools:context=".UI.ScanLocationActivity">
+
+
+
+    <EditText
+        android:id="@+id/barcodeEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:defaultFocusHighlightEnabled="true"
+        android:focusable="true"
+        android:focusedByDefault="true"
+        android:hint="Barcode"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="@dimen/_4ssp"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toTopOf="@+id/scanTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintVertical_bias="0.014"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/scanTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:clipToPadding="false"
+        android:padding="@dimen/_5sdp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"  >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+
+            <TextView
+                android:id="@+id/barcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barcode :"
+                android:textColor="@color/colorNoteColor2"
+                android:layout_margin="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:id="@+id/barcodeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barcode"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/_5sdp"
+
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+
+            <TextView
+                android:id="@+id/Dec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description  :"
+                android:textColor="@color/colorNoteColor2"
+                android:layout_margin="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:id="@+id/desTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" des"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/_5sdp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdp">
+
+
+        <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price  :"
+                android:textColor="@color/colorNoteColor2"
+                android:layout_margin="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:id="@+id/priceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="price"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/_5sdp"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/changeQtyeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_btn_scan"
+                android:elevation="@dimen/_5sdp"
+                android:text="Change Qty"
+                android:padding="@dimen/_7sdp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_80sdp"
+                android:layout_marginLeft="@dimen/_80sdp" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdp">
+
+
+            <TextView
+                android:id="@+id/qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty  :"
+                android:textColor="@color/colorNoteColor2"
+                android:layout_margin="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:id="@+id/qtyTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="price"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/_5sdp"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/changePriceBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_btn_scan"
+                android:elevation="@dimen/_5sdp"
+                android:text="Change Price"
+                android:padding="@dimen/_7sdp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_80sdp"
+                android:layout_marginLeft="@dimen/_80sdp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

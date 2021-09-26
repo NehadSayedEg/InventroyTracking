@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InventroyTracking</string>
+    <string name="click_to_select_location"><font size="25">click to select Location</font></string>
+
+</resources>
